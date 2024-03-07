@@ -1,0 +1,152 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg1.png'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    color: #000;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    margin-right: 20px;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-text h2 {
+    color: #f9f5f5;
+    font-size: 2em;
+}
+
+.intro-text h3 {
+    color: #16022a; /* Orange color */
+    font-size: 2.5em;
+}
+
+.tagline {
+    color: #000;
+    font-size: 1.5em;
+}
+
+.about-me {
+    background-color: #4B0082; /* Dark purple */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.social-icons a {
+    /* Your existing styles */
+    box-shadow: 0 0 10px #00f; /* Blue glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    box-shadow: 0 0 20px rgb(0, 255, 183); /* Increase glow effect on hover */
+}
+
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    filter: brightness(300%);
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(100%);
+}
+
+
+
+/* Animated image styling */
+.animated-image {
+    /* Add styles for your animated image */
+}
+
+/* Text animation */
+@keyframes textChange {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.animated-image {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.flip-animation {
+    animation: flip 1s forwards;
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); }
+}
+
+
